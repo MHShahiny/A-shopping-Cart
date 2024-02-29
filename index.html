@@ -1,0 +1,50 @@
+<!-- একটা ওয়েব পেইজের যেকোনো অংশে একটা প্রোডাক্ট এর লিস্ট থাকবে
+প্রতিটা প্রোডাক্টের সাথে দাম থাকবে আর একটা Add to Cart নামে বাটন থাকবে
+প্রোডাক্ট লিস্টের নিচে বা বামে আপনি কার্ট দেখাতে পারেন, কার্ট টি শুরুতে খালি থাকবে
+Add to Cart বাটনে ক্লিক করলে প্রোডাক্ট টি কার্টে যোগ হবে, প্রোডাক্ট লিস্ট থেকে প্রোডাক্ট টা যাবে না
+আবার কার্টের প্রোডাক্ট গুলোর পাশে একটা Remove বাটন থাকবে, যেটা ক্লিক করলে প্রোডাক্ট টা রিমুভ হয়ে যাবে
+ইমেজ দেখাতে হবে না
+একটা প্রোডাক্ট একবার এড করতে পারলে হবে
+কোয়ান্টিটি, মোট মূল্য দেখানো মেন্ডাটরি না
+ডিজাইন ইম্পর্ট্যান্ট না, ফাংশনালিটির উপর জোর দেয়ার চেষ্টা করুন -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <title>Shopping cart</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Product List</h2>
+        <ol id="product_list" >
+            <li class="product-item">
+                Product 1 - $10
+                <button class="add_to_cart">Add to Cart</button>
+            </li>
+            <li class="product-item">
+                Product 2 - $20
+                <button class="add_to_cart">Add to Cart</button>
+            </li>
+            <li class="product-item">
+                Product 3 - $30
+                <button class="add_to_cart">Add to Cart</button>
+            </li>
+            <li class="product-item">
+                Product 4 - $40
+                <button class="add_to_cart">Add to Cart</button>
+            </li>
+            <!-- Add more products as needed -->
+        </ol>
+        <h2>Your Cart</h2>
+        <ul id="cart">
+
+        </ul>
+        <button id="remove_from_cart" >Remove from Cart</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
